@@ -5,6 +5,10 @@
 .publication-note,.topic-description{font-size:14px;color:var(--muted)}
 .publication-topic{scroll-margin-top:24px}
 .publication-topic>h2{margin:8px 0 12px}
+.topic-figure{margin:22px 0 18px}
+.topic-figure>a{display:flex;align-items:center;justify-content:center;min-height:220px;background:#fff}
+.topic-figure img{width:auto;max-width:100%;max-height:380px;object-fit:contain}
+.topic-figure figcaption{margin:9px 0 0;font-size:12px;text-align:left}
 .publication-topic .publication-venue{font-style:italic;color:var(--ink)}
 .related-records{margin-top:14px;font-size:13px;color:var(--muted);padding:12px 16px;background:var(--wash)}
 .related-records summary{cursor:pointer;color:var(--green)}
@@ -33,3 +37,17 @@
 .journal-advanced-functional img{width:120px;max-width:none;max-height:none;flex-shrink:0}
 .journal-eem img{max-height:44px}
 .journal-arxiv img{max-height:54px}
+.profile-links a{width:max-content;max-width:100%;border-bottom:1px solid transparent;line-height:1.5}
+.profile-links a:hover{border-bottom-color:currentColor;text-decoration:none}
+:root .topic-nav{border-top:0;background:var(--wash);padding:20px 24px 18px;border-radius:3px}
+.topic-nav .topic-nav-heading{display:flex;justify-content:space-between;gap:16px;margin:0 0 8px;font-size:13px;font-weight:650;color:var(--ink)}
+.topic-nav-heading span{font-size:12px;font-weight:400;color:var(--muted)}
+.topic-nav a{display:grid;grid-template-columns:minmax(0,1fr) minmax(90px,35%) 40px;align-items:center;gap:14px;padding:11px 0;color:var(--ink)}
+.topic-nav a:hover{text-decoration:none;color:var(--green)}
+.topic-nav a:hover .topic-nav-label{text-decoration:underline;text-underline-offset:4px}
+.topic-nav .topic-nav-label{font-size:14px;line-height:1.35;color:var(--ink)}
+.topic-nav-label small{display:block;margin-top:2px;font-size:11px;color:var(--muted)}
+.topic-nav-track{height:8px;overflow:hidden;border-radius:99px;background:#dfe8dd}
+.topic-nav-fill{display:block;height:100%;border-radius:99px;background:var(--green)}
+.topic-nav strong{font-size:13px;font-weight:650;text-align:right;color:var(--green)}
+@media(max-width:760px){.profile-links{gap:10px 20px;flex-wrap:wrap}.profile-links a{padding:3px 0}:root .topic-nav{padding:16px 18px}.topic-nav a{grid-template-columns:minmax(0,1fr) 48px;gap:4px 12px;padding:12px 0}.topic-nav .topic-nav-label{font-size:13px}.topic-nav-track{grid-column:1/-1;grid-row:2}.topic-nav strong{grid-column:2;grid-row:1}.topic-nav .topic-nav-heading{align-items:baseline}.topic-figure>a{min-height:160px}.topic-figure img{max-height:280px}}
